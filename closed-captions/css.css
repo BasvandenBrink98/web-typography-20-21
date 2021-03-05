@@ -107,9 +107,10 @@ Sounds.
 	background: yellow;
 } */
 
-/* iframe {
+iframe {
 	transition: 1s;
-} */
+	margin: 0 auto;
+}
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 /* .sound1 iframe {
 	transform: rotate(1turn);
