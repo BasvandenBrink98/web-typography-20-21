@@ -109,13 +109,25 @@ Sounds.
 
 iframe {
 	transition: 1s;
-	margin: 0 auto;
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 /* .sound1 iframe {
 	transform: rotate(1turn);
 } */
 
+/* **********************************
+Custom styling
+*********************************** */
+
 body{
-	background-color: #242424;
+	background-color: #000000;
+}
+
+#content-container{
+	display: flex;
+	justify-content: center;
+}
+
+.p0.on span:first-of-type {
+	color: #ff6161;
 }
