@@ -164,6 +164,10 @@ iframe{
 	height: 629px;
 }
 
+body .html5-video-player {
+  background-color: #000;
+}
+
 .p0 span {
 	opacity: 0;
 }
