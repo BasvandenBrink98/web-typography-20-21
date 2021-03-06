@@ -1,7 +1,7 @@
 # Readme
 
 ## Typografie keuze
-Ik heb er voor gekozen om gebruik te maken van het Brenner font. In het eerste gesprek met Darice vertelde ze dat ze verschillende typografieën niet erg vindt voor de ondertiteling. Het zou haar waarschijnlijk juist helpen door het onderschijden van de betreffende sprekers gemakkelijker te maken. 
+Ik heb er voor gekozen om gebruik te maken van het Brenner font. In het eerste gesprek met Darice vertelde ze dat ze verschillende typografieën niet erg vindt voor de ondertiteling. Het zou haar waarschijnlijk juist helpen door het onderscheiden van de betreffende sprekers gemakkelijker te maken. 
 Het systeem font kan daar van zichzelf niet genoeg variatie voor geven. 
 
 Ook wil ik als designer in deze opdracht alle controle hebben over hoe de tekst uiteindelijk wordt vertoond. Door het systeem font te gebruiken ga ik deze zekerheid niet hebben.
