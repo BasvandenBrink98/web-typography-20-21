@@ -1,3 +1,16 @@
+# Readme
+
+## Typografie keuze
+Ik heb er voor gekozen om gebruik te maken van het Brenner font. In het eerste gesprek met Darice vertelde ze dat ze verschillende typografieën niet erg vindt voor de ondertiteling. Het zou haar waarschijnlijk juist helpen door het onderscheiden van de betreffende sprekers gemakkelijker te maken. 
+Het systeem font kan daar van zichzelf niet genoeg variatie voor geven. 
+
+Ook wil ik als designer in deze opdracht alle controle hebben over hoe de tekst uiteindelijk wordt vertoond. Door het systeem font te gebruiken ga ik deze zekerheid niet hebben.
+Het is wellicht mogelijk om het ontwerp op verschillende systemen te testen, maar door de mogelijkheid voor gebruikers om een custom systeem font te selecteren geeft te veel onzekerheid om te garanderen dat het ontwerp goed in stand blijft.
+
+Door het grote scala aan mogelijkheden die het Brenner font biedt en door de garantie van alle controle op het typografische uiterlijk, ga ik in mijn ontwerp het Brenner font gebruiken. 
+
+
+
 # Web Typography, 2020/2021
 
 Als je doof bent, of als je om een andere reden geen geluid kunt horen, dan mis je veel informatie als je een film kijkt. Knisperende voetstappen, langzaam aanzwellende muziek, nerveus getik op een deur, je hoort het natuurlijk allemaal niet. Nu bestaat er zoiets als *closed caption*, wat een type ondertiteling is waarbij ook dingen als omgevingsgeluiden en de muziek beschreven worden. Hierdoor krijgt een kijker die informatie wel binnen.
