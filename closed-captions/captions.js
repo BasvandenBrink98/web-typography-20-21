@@ -22,7 +22,7 @@ captions[15] = ['39.1','39.9'];
 	//When you're not performing your duties, do they keep you in a little box?
 captions[16] = ['39.9','42.8'];
 captions[17] = ['42.8','43.1'];
-captions[18] = ['43.3','44.1'];
+captions[18] = ['43.3','44'];
 	//Interlinked
 captions[19] = ['44','44.5'];
 captions[20] = ['45','45.7'];
@@ -55,8 +55,8 @@ captions[39] = ['65.2','66.6'];
 	//Why don't you say that three times: "within cells interlinked".
 captions[40] = ['66.6','69.1'];
 
-captions[41] = ['69.1','70.6'];
-captions[42] = ['70.6','72.2'];
+captions[41] = ['69.1','74.2'];
+captions[42] = ['70.6','74.2'];
 captions[43] = ['72.2','74.2'];
 	// We're done.
 captions[44] = ['77.1','78.7'];
