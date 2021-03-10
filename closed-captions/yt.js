@@ -7,12 +7,13 @@ function onYouTubeIframeAPIReady() {
 		videoId: 'vrP-_T-h9YM',
 		playerVars: {
 			color: 'white',
-			//start: 
+			//start:
 			//autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'
 		},
 		events: {
 			onReady: initialize
+
 		}
 	});
 }
@@ -20,6 +21,7 @@ function onYouTubeIframeAPIReady() {
 function initialize(){
 	// Update the controls on load
 	addSpans();
+
 }
 function addSpans(){
 	var ps = document.querySelectorAll('#closed-captions p');
@@ -39,6 +41,7 @@ function addSpans(){
 
 function updateTimerDisplay(){
 	var t = player.getCurrentTime();
+
 	t = Math.floor10(t,-1);
 	// for each paragraph we want to know:
 	// (paragraph number, start time, end time, current time)
@@ -60,7 +63,7 @@ function updateTimerDisplay(){
 			updateTimerDisplay();
 		}, 100);
 	}
-	
+
 }
 function pTimes(num,startT,endT,curT) {
 	var curP = document.querySelector('.p' + num);
@@ -136,4 +139,4 @@ function sTimes(num,soundStarts,curT) {
 		};
 	}
 })();
-
+console.log(t);

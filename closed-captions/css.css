@@ -14,6 +14,7 @@ Feel free to adjust the defaults to your needs.
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 27em;
+	margin-top: -2.5em;
 }
 
 #closed-captions .on {
@@ -31,8 +32,8 @@ Feel free to adjust the defaults to your needs.
 
 /* **********************************************
 TEXT STYLING
-
 ********************************************** */
+
 /*Interragator*/
 .voice1 {
 	font-family: "Brenner Mono";
@@ -64,13 +65,6 @@ TEXT STYLING
 	font-weight: 400;
 	color: ##e6e2d5
 }
-
-
-/* p{
-  left: 50%;
-  transform: translate(-50%, -50%);
-	text-align: center;
-} */
 
 .p0 span {
 	opacity: 0;
@@ -140,6 +134,7 @@ TEXT STYLING
 	padding-top: 1.7em;
 }
 
+
 .p42{
 	padding-top: 2.5em;
 }
@@ -171,30 +166,33 @@ Sounds.
 	100% {
 		background-color:#000;
 	}
-
-
-
 }
-/* The moment the class .sound1 is added to the body, the background is yellow */
+
+/* The calmness you feel during "we're done" */
+@keyframes sound13 {
+	0%{
+		background-color: #fff;
+	}
+	100%{
+		background-color: #000;
+	}
+}
+
 .sound2 {
 	animation: sound2 1s linear;
-}
+	}
 
-/* iframe {
-	transition: 1s;
-} */
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-/* .sound1 iframe {
-	transform: rotate(1turn);
-} */
+
 
 /* **********************************
 Custom styling
 *********************************** */
 
 body{
-	background-color: #000000;
+	background-color: #000;
+	margin: 0;
 }
+
 
 #content-container{
 	display: grid;
@@ -209,6 +207,7 @@ body{
 	grid-row-end: 3;
 	justify-self: center;
 	align-self: center;
+	z-index: 1
 }
 
 #closed-captions{
@@ -219,8 +218,19 @@ body{
 	justify-self: center;
 	align-self: start;
 	margin-top: -6em;
+	z-index: 1;
 }
 
+#animation-container{
+	z-index: 0;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	overflow: hidden;
+	justify-self: center;
+	align-self: center;
+}
 
 iframe{
 	width: 100%;
@@ -231,7 +241,32 @@ body .html5-video-player {
   background-color: #000;
 }
 
+#animation{
+	opacity: 0;
+	width: 100%;
+	height: 99.5vh;
+	transform: scale(2);
+}
 
+ .sound11 #animation{
+	opacity: 1;
+ }
+
+ .sound12 #animation{
+	 opacity: 0;
+ }
+
+ .sound12{
+	 background-color: #fff;
+ }
+
+	.sound13{
+	 animation: sound13 0.5s ease-out;
+	}
+
+	.sound14{
+		background-color: #000;
+	}
 
 /*
 Black bar removal from video
