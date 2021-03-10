@@ -248,6 +248,8 @@ body .html5-video-player {
 	transform: scale(2);
 }
 
+/*Bron voor dubbele selectors: https://css-tricks.com/multiple-class-id-selectors/*/
+
  .sound11 #animation{
 	opacity: 1;
  }
