@@ -56,14 +56,23 @@ TEXT STYLING
 	font-family: "Brenner Slab";
 	font-style: italic;
 	font-weight: 800;
-	color: #fc0303;
+	color: #940c0c;
 }
 
+/*Interragator (but more mean)*/
 .voice4 {
 	font-family: "Brenner Mono";
 	font-style: normal;
+	font-weight: 200;
+	color: #e6e2d5;
+}
+
+.voice5{
+	font-family: "Brenner Sans";
+	font-style: italic;
 	font-weight: 400;
-	color: ##e6e2d5
+	letter-spacing: 2px;
+	color: #fff1db;
 }
 
 .p0 span {
@@ -139,13 +148,24 @@ TEXT STYLING
 }
 
 .p42{
-	padding-top: 1.6em;
+	padding-top: 1.4em;
 }
 
 .p43{
 	padding-top: 4em;
 }
 
+#closed-captions .p54{
+	margin-top: -4em;
+}
+
+#closed-captions .p56{
+	margin-top: -3em;
+}
+
+.p57{
+	padding-top: 3.5em;
+}
 
 /* **********************************************
 Sounds.
@@ -161,24 +181,176 @@ Sounds.
 		background-color: #000;
 	}
 	50% {
-		background-color: #1a0101;
+		background-color: #1B292B;
 	}
 	70% {
-		background-color: #1a0101;
+		background-color: #1B292B;
 	}
 	100% {
 		background-color :#000;
 	}
 }
 
+@keyframes sound3AlarmBeep {
+0%{
+	background-image: radial-gradient(
+		ellipse at center,
+		rgba(80, 12, 12, 0.5) 0%,
+		rgba(80, 80, 80, 0) 20% );
+	opacity: 0;
+	}
+15%{
+	opacity: 1;
+	}
+50%{
+		background-image: radial-gradient(
+			ellipse at center,
+			rgba(80, 12, 12, 0.5) 0%,
+			rgba(80, 80, 80, 0) 60% );
+		}
+85%{
+	background-image: radial-gradient(
+		ellipse at center,
+		rgba(80, 12, 12, 0.5) 0%,
+		rgba(80, 80, 80, 0) 80% );
+	opacity: 1;
+	}
+100%{
+	opacity: 0
+	}
+}
+
+@keyframes sirenEaseInOut{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0.7;
+	}
+	50%{
+		opacity: 1
+	}
+	90%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes siren2EaseInOut{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0.7;
+	}
+	50%{
+		opacity: 1
+	}
+	90%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes siren3EaseInOut{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 0.7;
+	}
+	50%{
+		opacity: 1
+	}
+	90%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+
+/*Bron voor voor visuele clippath value generator tool*/
+@keyframes sirenMask{
+	0%{
+		clip-path: polygon(0 26%, 0 26%, 50% 50%, 0 76%, 0% 76%);
+	}
+	15%{
+		clip-path: polygon(0 0, 18% 0, 50% 50%, 18% 100%, 0% 100%);
+	}
+	30%{
+		clip-path: polygon(0% 0%, 40% 0, 50% 50%, 40% 100%, 0% 100%);
+	}
+	60%{
+		clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%, 50% 50%);
+	}
+	85%{
+		clip-path: polygon(72% 0, 100% 0, 100% 100%, 72% 100%, 50% 50%);
+	}
+	100%{
+		clip-path: polygon(100% 26%, 100% 26%, 100% 76%, 100% 76%, 50% 50%);
+	}
+
+}
+
+@keyframes sirenMask2{
+	0%{
+		clip-path: polygon(0 26%, 0 26%, 50% 50%, 0 76%, 0% 76%);
+	}
+	15%{
+		clip-path: polygon(0 0, 18% 0, 50% 50%, 18% 100%, 0% 100%);
+	}
+	30%{
+		clip-path: polygon(0% 0%, 40% 0, 50% 50%, 40% 100%, 0% 100%);
+	}
+	60%{
+		clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%, 50% 50%);
+	}
+	85%{
+		clip-path: polygon(72% 0, 100% 0, 100% 100%, 72% 100%, 50% 50%);
+	}
+	100%{
+		clip-path: polygon(100% 26%, 100% 26%, 100% 76%, 100% 76%, 50% 50%);
+	}
+
+}
+
+@keyframes sirenMask3{
+	0%{
+		clip-path: polygon(0 26%, 0 26%, 50% 50%, 0 76%, 0% 76%);
+	}
+	15%{
+		clip-path: polygon(0 0, 18% 0, 50% 50%, 18% 100%, 0% 100%);
+	}
+	30%{
+		clip-path: polygon(0% 0%, 40% 0, 50% 50%, 40% 100%, 0% 100%);
+	}
+	60%{
+		clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%, 50% 50%);
+	}
+	85%{
+		clip-path: polygon(72% 0, 100% 0, 100% 100%, 72% 100%, 50% 50%);
+	}
+	100%{
+		clip-path: polygon(100% 26%, 100% 26%, 100% 76%, 100% 76%, 50% 50%);
+	}
+
+}
+
 @keyframes sound10Texture {
 	0%{
 		opacity: 0;
-		transform: scale(6);
+		transform: scale(5);
 	}
 	64%{
-		opacity: 0.02;
-		transform: scale(6);
+		opacity: 0.05;
+		transform: scale(5);
 	}
 	100%{
 		opacity: 0.3;
@@ -298,10 +470,6 @@ animation: sound10Color 42s ease-in;
 animation: sound10Texture 42s ease-in;
 }
 
-/* .sound11 #animation{
- animation: sound11Color 15s ease;
- animation: sound11Texture 15s ease;
-} */
 
 .sound12 #animation{
  animation: sound12Texture 0.6s ease-out;
@@ -312,27 +480,128 @@ animation: sound10Texture 42s ease-in;
 }
 
 .sound13{
- animation: sound13 0.5s ease-out;
+ animation: sound13 0.7s ease-out;
 }
 
 .sound14{
 	background-color: #000;
 }
 
-/*
-Black bar removal from video
->Javascript nodig om iframe contents te beïnvoeden
-*/
-/*.video-stream, .html5-main-video{
-	width: 122% !important;
-	height: 489px !important;
-	left: -103px !important;
-	top: -66px !important;
-
+#alarmBeep{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+	height: 99.5vh;
 }
 
-.html5-video-player::after{
-		background-color: rgba(255,255,255,0) !important;
-		height: 363px !important;
+.sound3 #alarmBeep{
+	animation: sound3AlarmBeep 1s ease;
+}
 
-}*/
+#sirensContainer{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	overflow: hidden;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+	height: 99.5vh;
+}
+
+#siren1Container{
+	filter: blur(50px);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#siren2Container{
+	filter: blur(50px);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(0px, -60.5em);
+}
+
+#siren3Container{
+	filter: blur(50px);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(0, -120.5em);
+}
+
+#alarmSiren{
+	background:
+	radial-gradient(
+		ellipse at center,
+		rgba(173, 173, 173, 0.6) 0%,
+		rgba(0, 0, 0, 0) 50%),
+	radial-gradient(
+		ellipse at center,
+		rgba(197, 120, 165, 0.6) 0%,
+		rgba(0, 0, 0, 0) 30%);
+	width: 100%;
+	height: 100%;
+}
+
+#alarmSiren2{
+	background:
+	radial-gradient(
+		ellipse at center,
+		rgba(173, 173, 173, 0.6) 0%,
+		rgba(0, 0, 0, 0) 60%),
+	radial-gradient(
+		ellipse at center,
+		rgba(197, 120, 165, 0.7) 0%,
+		rgba(0, 0, 0, 0) 40%);
+	width: 100%;
+	height: 100%;
+}
+
+#alarmSiren3{
+	background:
+	radial-gradient(
+		ellipse at center,
+		rgba(173, 173, 173, 0.6) 0%,
+		rgba(0, 0, 0, 0) 60%),
+	radial-gradient(
+		ellipse at center,
+		rgba(197, 120, 165, 0.9) 0%,
+		rgba(0, 0, 0, 0) 40%);
+	width: 100%;
+	height: 100%;
+}
+
+.sound5 #siren1Container{
+	animation: sirenEaseInOut 0.8s ease-in-out;
+}
+
+.sound5 #alarmSiren{
+	animation: sirenMask 0.8s linear;
+	transform: scale(1.1);
+}
+
+.sound7 #siren2Container{
+	animation: siren2EaseInOut 0.8s ease-in-out;
+}
+
+.sound7 #alarmSiren2{
+	animation: sirenMask2 0.8s linear;
+	transform: scale(1.5);
+}
+
+.sound9 #siren3Container{
+	animation: siren3EaseInOut 0.8s ease-in-out;
+}
+
+.sound9 #alarmSiren3{
+	animation: sirenMask3 0.8s linear;
+	transform: scale(1.8);
+}
