@@ -142,6 +142,18 @@ POSITIONING
 	overflow: hidden;
 	justify-self: center;
 	align-self: center;
+	/* height: 3em; */
+}
+
+#soundTxtContainer p {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: "Brenner Mono";
+	font-style: normal;
+	font-size: 1.8em;
+	opacity: 0;
 }
 
 #animation-container{
@@ -153,7 +165,6 @@ POSITIONING
 	overflow: hidden;
 	justify-self: center;
 	align-self: center;
-	/* height: 143%; */
 }
 
 #siren1Container{
@@ -179,38 +190,51 @@ POSITIONING
 	transform: translate(0, -120.5em);
 }
 
-
 .p16{
-	padding-top: 1.7em;
+	padding-top: 0.7em;
 }
 
 #closed-captions .p41{
-	margin-top: -3em;
+	margin-top: -3.5em;
 }
 
-.p42{
-	padding-top: 1.4em;
+#closed-captions .p42{
+	margin-top: -2.4em;
 }
 
-.p43{
-	padding-top: 4em;
+#closed-captions .p43{
+	margin-top: -1.3em;
 }
 
 #closed-captions .p54{
-	margin-top: -4em;
+	margin-top: -3em;
+}
+
+#closed-captions .p55{
+	margin-top: -1em;
 }
 
 #closed-captions .p56{
 	margin-top: -3em;
 }
 
-.p57{
+#closed-captions .p57{
 	padding-top: 3.5em;
 }
 
 /* **********************************************
 ANIMATIONS
 *********************************************  */
+@keyframes iframeTopRemoval{
+	0%{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	100%{
+			clip-path: polygon(0 18.8%, 100% 18.8%, 100% 100%, 0% 100%);
+	}
+}
+
+
 @keyframes soundTxtEaseInOut{
 	0%{
 		opacity: 0;
@@ -248,22 +272,22 @@ ANIMATIONS
 0%{
 	background-image: radial-gradient(
 		ellipse at center,
-		rgba(80, 12, 12, 0.5) 0%,
+		rgba(80, 12, 12, 0.4) 0%,
 		rgba(80, 80, 80, 0) 20% );
 	opacity: 0;
 	}
 60%{
 	background-image: radial-gradient(
 		ellipse at center,
-		rgba(80, 12, 12, 0.5) 0%,
-		rgba(80, 80, 80, 0) 100% );
+		rgba(80, 12, 12, 0.9) 0%,
+		rgba(80, 80, 80, 0) 80% );
 	opacity: 1;
 	}
 100%{
 	background-image: radial-gradient(
 		ellipse at center,
-		rgba(80, 12, 12, 0.5) 0%,
-		rgba(80, 80, 80, 0) 20% );
+		rgba(80, 12, 12, 0.4) 0%,
+		rgba(80, 80, 80, 0) 40% );
 	opacity: 0
 	}
 }
@@ -315,11 +339,11 @@ ANIMATIONS
 		transform: scale(5);
 	}
 	64%{
-		opacity: 0.05;
+		opacity: 0.09;
 		transform: scale(5);
 	}
 	100%{
-		opacity: 0.3;
+		opacity: 0.32;
 		transform: scale(2);
 	}
 }
@@ -361,12 +385,13 @@ ANIMATIONS
 /* **********************************
 GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 *********************************** */
-#soundTxtContainer p{
-	font-family: "Brenner Mono";
-	font-style: normal;
-	font-size: 1.8em;
-	opacity: 0;
-	text-align: center;
+.sound0 #video-placeholder{
+		animation: iframeTopRemoval 1.2s ease-in-out forwards;
+}
+
+#closed-captions .p6{
+	font-size: 1em;
+	margin-top: -4.5em;
 }
 
 .sound2 {
@@ -377,7 +402,6 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 	color: rgba(90, 107, 109, 0.8);;
 	font-weight: 800;
 	animation: soundTxtEaseInOut 1s;
-	transform: translateY(4em);
 }
 
 #alarmBeep{
@@ -393,8 +417,7 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 .sound3 #soundTxt2{
 	color: rgba(80, 12, 12, 0.8);
 	font-weight: 800;
-	animation: soundTxtEaseInOut 1s;
-	transform: translateY(1.8em);
+	animation: soundTxtEaseInOut 1.5s;
 }
 
 #siren1Container{
@@ -409,7 +432,6 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 	opacity: 0;
 	width: 100%;
 	height: 100%;
-	transform: translate(0px, -60.5em);
 }
 
 #siren3Container{
@@ -417,7 +439,6 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 	opacity: 0;
 	width: 100%;
 	height: 100%;
-	transform: translate(0, -133.5em);
 }
 
 #alarmSiren{
@@ -472,11 +493,10 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 }
 
 .sound5 #soundTxt3{
-	color: (173, 173, 173, 0.6);
+	color: rgba(173, 173, 173, 0.8);
 	mix-blend-mode: darken;
-	font-weight: 800;
+	font-weight: 400;
 	animation: soundTxtEaseInOut 0.8s;
-	transform: translateY(-0.4em);
 }
 
 .sound7 #siren2Container{
@@ -485,15 +505,14 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 
 .sound7 #alarmSiren2{
 	animation: sirenMask 0.8s linear;
-	transform: scale(1.5);
+	transform: scale(1.4);
 }
 
-.sound7 #soundTxt3{
-	color: (173, 173, 173, 0.6);
+.sound7 #soundTxt4{
+	color: rgba(173, 173, 173, 0.6);
 	mix-blend-mode: darken;
-	font-weight: 800;
+	font-weight: 400;
 	animation: soundTxtEaseInOut 0.8s;
-	transform: translateY(-0.4em);
 }
 
 .sound9 #siren3Container{
@@ -502,15 +521,14 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 
 .sound9 #alarmSiren3{
 	animation: sirenMask 0.8s linear;
-	transform: scale(1.8);
+	transform: scale(1.6);
 }
 
-.sound9 #soundTxt3{
-	color: (173, 173, 173, 0.6);
+.sound9 #soundTxt5{
+	color: rgba(173, 173, 173, 0.6);
 	mix-blend-mode: darken;
-	font-weight: 800;
+	font-weight: 400;
 	animation: soundTxtEaseInOut 0.8s;
-	transform: translateY(-0.4em);
 }
 
 
@@ -526,11 +544,10 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 animation: sound10Color 42s ease-in;
 }
 
-.sound10 #soundTxt4{
+.sound10 #soundTxt6{
 	color: rgb(117, 120, 114, 0.8);
-	font-weight: 800;
+	font-weight: 400;
 	animation: soundTxtEaseInOut 42s;
-	transform: translateY(-1em);
 }
 
 .sound10 #gifAnimation{
