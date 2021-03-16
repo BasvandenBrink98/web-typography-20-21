@@ -361,10 +361,28 @@ ANIMATIONS
 	}
 }
 
+@keyframes sound10TxtColor {
+	0%{
+		opacity: 0;
+	}
+	20%{
+		opacity: 0.2;
+	}
+	60%{
+		opacity: 0.7;
+	}
+	99%{
+		opacity: 0.4;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
 /*Nice fade-out of texture gif on class sound12*/
 @keyframes sound12Texture {
 	0%{
-		opacity: 0.3;
+		opacity: 0.32;
 	}
 	100%{
 		opacity: 0;
@@ -372,7 +390,7 @@ ANIMATIONS
 }
 
 /* The calmness you feel during "we're done" */
-@keyframes sound13 {
+@keyframes sound12ColorChange {
 	0%{
 		background-color: #fff;
 	}
@@ -544,10 +562,14 @@ GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 animation: sound10Color 42s ease-in;
 }
 
+#soundTxt6{
+	opacity: 0
+}
+
 .sound10 #soundTxt6{
-	color: rgb(117, 120, 114, 0.8);
 	font-weight: 400;
-	animation: soundTxtEaseInOut 42s;
+	animation: sound10TxtColor 42s;
+	color: #ad5353;
 }
 
 .sound10 #gifAnimation{
@@ -555,17 +577,10 @@ animation: sound10Texture 42s ease-in;
 }
 
 .sound12 #gifAnimation{
- animation: sound12Texture 0.6s ease-out;
+ animation: sound12Texture 0.2s ease-in-out;
+
 }
 
 .sound12{
- background-color: #fff;
-}
-
-.sound13{
- animation: sound13 0.7s ease-out;
-}
-
-.sound14{
-	background-color: #000;
+ animation: sound12ColorChange 0.2s ease-in forwards ;
 }
