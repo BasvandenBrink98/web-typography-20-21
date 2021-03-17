@@ -400,6 +400,95 @@ ANIMATIONS
 }
 
 
+/*Inspiratie voor deze animatie: Fun ways to animate CSS gradients > https://www.youtube.com/watch?v=f3mwKLXpOLk*/
+@keyframes bgGradientMove{
+	0%{
+		opacity: 0;
+	}
+	3%{
+		background-position: right;
+		opacity: 1;
+	}
+	11%{
+		background-position: left;
+		opacity: 1;
+	}
+	25%{
+		background-position: center;
+		opacity: 1;
+	}
+	39%{
+		background-position: left;
+		opacity: 1;
+	}
+	50%{
+		background-position: center;
+		opacity: 1;
+	}
+	66%{
+		background-position: right;
+		opacity: 0.5;
+	}
+	75%{
+		background-position: right;
+		opacity: 0.5;
+	}
+	82%{
+		background-position: right;
+		opacity: 1;
+	}
+	91%{
+		background-position: center;
+		opacity: 1;
+	}
+	96%{
+		background-position: left;
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes textureAnimation2{
+	0%{
+		opacity: 0
+	}
+	2%{
+		opacity: 0.06
+	}
+	11%{
+		opacity: 0.001;
+	}
+	25%{
+		opacity: 0.02;
+	}
+	39%{
+		opacity: 0.03;
+	}
+	50%{
+		opacity: 0.002;
+	}
+	66%{
+		opacity: 0;
+	}
+	82%{
+		opacity: 0.008;
+	}
+	91%{
+		opacity: 0.02;
+	}
+	96%{
+		opacity: 0.08;
+	}
+	100%{
+		opacity: 0.2;
+	}
+
+
+}
+
+
 /* **********************************
 GENERAL STYLING AND RECALL KEYFAME ANIAMTIONS
 *********************************** */
@@ -583,4 +672,55 @@ animation: sound10Texture 42s ease-in;
 
 .sound12{
  animation: sound12ColorChange 0.2s ease-in forwards ;
+}
+
+.sound12 #soundTxt6{
+	opacity: 0;
+}
+
+#bgContainerAnimation2{
+	opacity: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(
+		45deg,
+		#000000,
+		#382a2a);
+	background-size: 500%;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+}
+
+#gifAnimation2{
+	opacity: 0;
+	width: 100%;
+	height: 99.5vh;
+	transform: scale(5);
+}
+
+
+/*Dramatic wavy/flowy background music*/
+.sound15 #animation-container{
+	opacity: 1;
+}
+
+.sound15 #bgContainerAnimation2{
+	opacity: 1;
+	animation: bgGradientMove 44s linear;
+}
+
+
+/*High pitch in second interragation*/
+.sound15 #gifAnimation2{
+	animation: textureAnimation2 44s linear;
+
+}
+
+.sound16 #bgContainerAnimation2{
+	opacity: 0;
+}
+
+.sound16 #gifAnimation2{
+	opacity: 0;
 }
